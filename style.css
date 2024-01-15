@@ -1,0 +1,154 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll;
+}
+
+#navbar {
+  position: fixed;
+  overflow: hidden;
+  background-color: #fffef0;
+  box-shadow: 0 2vw 5vw 0 rgba(46, 46, 46, 0.25);
+  width: 100%;
+  z-index: 999;
+  height: 75px;
+}
+
+.navbar {
+  color: #2e2e2e;
+  padding: 24px;
+  font-size: 24px;
+  font-family: Nunito;
+  float: left;
+  transition: 1s;
+  text-decoration: none;
+}
+
+.navbar:hover {
+  background-color: #2e2e2e;
+  color: #fffef0;
+}
+
+#pfp {
+  height: 50px;
+  width: 50px;
+  float: right;
+  margin-top: 10px;
+  border: solid #fffef0;
+  border-width: 1 1px;
+  border-radius: 50%;
+  box-shadow: 0 0 14px 2px #2e2e2e;
+  margin-right: 15px;
+}
+
+#titlepool {
+  height: 60vh;
+  width: 40vw;
+  border-radius: 45px;
+  vertical-align: middle;
+  background-color: blue;
+  margin: auto;
+}
+
+.category {
+  display: flex;
+  align-items: center;
+  z-index: 3;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  background-color: red;
+  margin: auto;
+
+}
+
+span {
+  display: inline;
+  margin: auto;
+}
+
+.text {
+  font-size: 8vw;
+  color: #2e2e2e;
+  font-family: Nunito;
+  text-shadow:
+    0 1px  gainsboro,
+    0 6px 1px rgb(158, 153, 153),
+    0 10px 5px rgb(206, 199, 199);
+}
+
+#caption {
+  font-size: 3vw;
+  color: #2e2e2e;
+  font-family: Nunito;
+  display: block; 
+}
+
+#wave {
+  text-shadow: none;
+  animation: rotate 1.5s infinite;
+  display: inline-block;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(75deg);
+  }
+  100% {
+    transform: rotate(15deg);
+  }
+}
+
+#home {
+  background-color: #fffef0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+#about {
+  background-image: url("images/eternal_atake.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#contact {
+  background-image: url("images/babyxbabypluto.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  background-attachment: fixed;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  padding-bottom: calc(2vw + 60px);
+}
